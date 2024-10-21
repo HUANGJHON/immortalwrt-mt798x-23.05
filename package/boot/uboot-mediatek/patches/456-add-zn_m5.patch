@@ -1,5 +1,5 @@
 --- /dev/null
-+++ b/configs/mt7981_cmcc_a10_defconfig
++++ b/configs/mt7981_zn_m5_defconfig
 @@ -0,0 +1,107 @@
 +CONFIG_ARM=y
 +CONFIG_SYS_HAS_NONCACHED_MEMORY=y
@@ -269,7 +269,7 @@
 +	status = "disabled";
 +};
 --- /dev/null
-+++ b/cmcc_a10_env
++++ b/zn_m5_env
 @@ -0,0 +1,54 @@
 +ipaddr=192.168.1.1
 +serverip=192.168.1.254
