@@ -13,7 +13,7 @@ board=$(board_name)
 
 case "$board" in
 abt,asr3000|\
-zn,m2|\
+zn,m5|\
 h3c,magic-nx30-pro|\
 imou,lc-hx3001|\
 jcg,q30|\
