@@ -38,7 +38,7 @@ mediatek_setup_interfaces()
 	*konka,komi-a31*)
 		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3" wan
 		;;
-	*cmcc,a10*)
+	*zn,m5*)
 		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3" wan
 		;;
 	*jcg,q30*)
@@ -311,7 +311,7 @@ mediatek_setup_macs()
 			mtk_facrory_write_mac "Factory" 4 $wifi_mac
 		fi
 		;;
-	*cmcc,a10* |\
+	*zn,m5* |\
 	*konka,komi-a31*)
 		lan_mac=$(mtd_get_mac_binary $part_name 0x2A)
 		wan_mac=$(mtd_get_mac_binary $part_name 0x24)
