@@ -214,11 +214,11 @@ define U-Boot/mt7981_abt_asr3000
   DEPENDS:=+trusted-firmware-a-mt7981-spim-nand-ddr3
 endef
 
-define U-Boot/mt7981_cmcc_a10
-  NAME:=CMCC A10
+define U-Boot/mt7981_zn_m5
+  NAME:=ZN M5
   BUILD_SUBTARGET:=filogic
-  BUILD_DEVICES:=cmcc_a10
-  UBOOT_CONFIG:=mt7981_cmcc_a10
+  BUILD_DEVICES:=zn_m5
+  UBOOT_CONFIG:=mt7981_zn_m5
   UBOOT_IMAGE:=u-boot.fip
   BL2_BOOTDEV:=spim-nand
   BL2_SOC:=mt7981
@@ -679,7 +679,7 @@ UBOOT_TARGETS := \
 	ravpower_rp-wd009 \
 	mt7629_rfb \
 	mt7981_abt_asr3000 \
-	mt7981_cmcc_a10 \
+	mt7981_zn_m5 \
 	mt7981_cmcc_rax3000m-emmc \
 	mt7981_cmcc_rax3000m-nand \
 	mt7981_h3c_magic-nx30-pro \
